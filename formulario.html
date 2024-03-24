@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Pesquisa de satisfação</title>
+    </header>
+    <head><h1>Pesquisa de satisfação</h1></head>
+    <body>
+    <form action="destino-dados-form.html" method="POST">
+        <section>
+        <h2>Dados pessoais</h2>
+        <p>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome">
+        </p>
+        
+        <p>
+            <label for="email">E-mail</label>
+            <input type="e-mail" id="email">
+        </p>
+
+        <p>
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone">
+        </p>
+        </section>
+    <section>
+    <h2>Pesquisa</h2>
+    <h3>Como você avalia nossos produtos?</h3>
+    <p>
+        <input type="radio" id="excelente" name="produtos">
+        <label for="excelente">Excelente</label>
+        <input type="radio" id="otimo" name="produtos">
+        <label for="excelente">Ótimo</label>
+        <input type="radio" id="razoavel" name="produtos">
+        <label for="excelente">Razoável</label>
+        <input type="radio" id="ruim" name="produtos">
+        <label for="excelente">Ruim</label>
+        <input type="radio" id="pessimo" name="produtos">
+        <label for="excelente">Péssimo</label>
+    </p>
+    <h3>Como você avalia nosso atendimento?</h3>
+    <p>
+        <input type="radio" id="excelente" name="atendimento">
+        <label for="excelente">Excelente</label>
+        <input type="radio" id="otimo" name="atendimento">
+        <label for="excelente">Ótimo</label>
+        <input type="radio" id="razoavel" name="atendimento">
+        <label for="excelente">Razoável</label>
+        <input type="radio" id="ruim" name="atendimento">
+        <label for="excelente">Ruim</label>
+        <input type="radio" id="pessimo" name="atendimento">
+        <label for="excelente">Péssimo</label>
+    </p>
+    <p>
+        <h3><label for="recomendação">De um a 10, qual a chance de você recomendar nossos serviços para outras pessoas?</label></h3>
+        </p>
+        <select id="recomendação">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        </select>
+    </section>
+    <p>
+        <input type="checkbox" id="autorização" checked>
+        <label for="autorização">Eu autorizo o compartilhamento da minha resposta com terceiros.</label>
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+    </p>
+    </form>
+    </body>
+</html>
