@@ -1,0 +1,215 @@
+#css-zen-garden {
+    background-color: #F2E0C9;
+    color: #025959;
+    font-family: Helvetica;
+    font-size: 24px;
+    width: 80%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+#zen-intro {
+    height: 550px;
+}
+p {
+    text-indent: 1em;
+}
+
+h1 {
+    text-align: right;
+    font-size: 1.8rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.main p {
+    line-height: 1.5;
+}
+
+.summary p {
+    text-align: center;
+}
+
+abbr {
+    font-variant: small-caps;
+}
+
+header {
+    color: #F2E0C9;
+    background-color: #025959;
+}
+
+header h1, h2 {
+    display: inline-block;
+}
+
+header h1 {
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+aside ul li {
+    margin: 1em;
+    text-align: center;
+}
+
+#design-archives {
+    display: none; /*o navegador não irá exibir o elemento, ou seja, o excluirá na renderização*/
+}
+
+.main footer {
+    margin: 4%;
+}
+
+.main footer a {
+    border: solid 2px #025959;
+    padding: 0.5em;
+    display: inline-block;
+}
+
+.page-wrapper {
+    position: relative;
+}
+
+.explanation {
+    width: 60%;
+    margin-right: 35%;
+    border-right: solid 1px #1f295c;
+    padding-right: 2%;
+
+}
+
+#design-selection {
+    position: absolute;
+    top: 480px;
+    left: 62%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    flex-wrap: wrap;
+
+}
+
+.benefits {
+    display: flex;
+    border-top: 1px #025959;
+    border-bottom: 1px solid #025959;
+}
+
+.benefits > h3 {
+    order: 2;
+    align-self: center;
+    flex-basis: 30%;
+}
+
+.benefits > p {
+    justify-content: left;
+    flex-basis: 70%;
+}
+
+.participation {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #025959;
+    border-bottom: 1px solid #025959;
+}
+
+.participation > h3 {
+    align-self: center;
+}
+
+.participation > p, .participation > h3 {
+    flex-basis: 50%;
+}
+
+a {
+    color: #025959;
+    font-style: bold;
+}
+
+a:hover {
+    color: #04BFBF;
+}
+
+a:visited {
+    font-style: normal;
+}
+
+.main p:first-of-type:first-letter {
+    font-size: 3em;
+    font-family: Impact;
+    float: left;
+}
+
+.design-selection li {
+    border-top: 1px solid #025959;
+    padding-top: 5px;
+}
+
+.design-selection li:last-of-type {
+    border-bottom: 1px solid #025959;
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    #design-selection {
+        position: static;
+        width: 100%;
+    }
+
+    .explanation {
+        border-right: none;
+        width: 100%;
+    }
+
+    #zen-intro {
+        height: auto;
+    }
+
+    .participation {
+        flex-direction: column;
+
+    }
+
+    body p {
+        text-indent: 0em;
+    }
+}
+
+@media print {
+    body  {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    header {
+        color: #025959;
+        background-color: #F2E0C9;
+    }
+
+    #design-selection {
+        position: static;
+        width: 100%;
+    }
+
+    .explanation {
+        border-right: none;
+        width: 100%;
+    }
+}
