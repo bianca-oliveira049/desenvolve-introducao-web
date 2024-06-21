@@ -1,0 +1,38 @@
+@media (max-width: 480px) {
+    .barra-nav ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .barra-nav li {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    h3 {
+        font-size: 1.1em;
+    }
+    p, .habilidades li {
+        font-size: 1em;
+    }
+    .rodape li {
+        font-size: 0.8em;
+    }
+    footer p {
+        font-size: 0.6em;
+    }
+    .cabecalho {
+        padding-bottom: -20%;
+    }
+    .cabecalho, .habilidades {
+        padding-top: 20%;
+    }
+    .educacao {
+        padding-top: 40%;
+    }
+}
